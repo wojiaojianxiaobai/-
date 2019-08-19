@@ -5,7 +5,7 @@ onference）。RTSP具有重新导向功能，根据负载情况来转换提供�
 
 RTSP和RTP的关系：
 
-![](media/95ea5e3b2c18f4f197e4919dd3c58fdb.png)
+![](https://github.com/wojiaojianxiaobai/-/blob/master/RTSP1.png)
 
 1.  **定义的方法**
 
@@ -34,7 +34,7 @@ REDIRECT
 一次基本的RTSP操作过程是:首先，客户端连接到流服务器并发送一个RTSP描述命令（DESCRIBE）。流服务器通过一个SDP描述来进行反馈，反馈信息包括流数量、媒体类型等信息。客户端再分析该SDP描述，并为会话中的每一个流发送一个RTSP建立命令(SETUP)，RTSP建立命令告诉服务器客户端用于接收媒体数据的端口。流媒体连接建立完成后，客户端发送一个播放命令(PLAY)，服务器就开始在UDP上传送媒体流（RTP包）到客户端。
 在播放过程中客户端还可以向服务器发送命令来控制快进、快退和暂停等。最后，客户端可发送一个终止命令(TERADOWN)来结束流媒体会话
 
-![](media/7e0f9a8399ac4cd4751fac885245f2db.png)
+![](https://github.com/wojiaojianxiaobai/-/blob/master/RTSP2.png)
 
 完整流程图
 
